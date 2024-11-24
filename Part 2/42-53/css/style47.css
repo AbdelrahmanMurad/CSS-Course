@@ -1,0 +1,71 @@
+/*
+Flexible Box مرن
+floatافضل من ال
+?For Parent
+- display: flex => To Start Flexible Box
+- flex-direction: row => Default Value
+    (row, row-reverse, column, column-reverse)
+- flex-wrap: nowrap => Default Value
+    (nowrap, wrap, wrap-reverse) نستخدمها في حالة وجود عنصر زيادة 
+- shorthand for  [Flex-Direction] + [Flex-Wrap]
+    flex-flow: [Flex-Direction] + [Flex-Wrap]
+*- justify-content: flex-start => Default Value
+      (flex-start, flex-end, center, space-betweenبين فقط, space-aroundحول فقط, space-evenlyبين وحول) افقييييي
+      align-contentسنأخذ العمودي في خاصية ال
+      justify ملئ
+      
+justify-content property, which aligns items horizontally and accepts the following values:
+- flex-start: Items align to the left side of the container.
+- flex-end: Items align to the right side of the container.
+- center: Items align at the center of the container.
+- space-between: Items display with equal spacing between them.
+- space-around: Items display with equal spacing around them.
+      
+https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp 
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.flex {
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: row wrap;
+  /* shorthand */
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
+}
+
+.flex div {
+  background-color: #f00;
+  color: white;
+  /* TODO: Each Div Width = [100% - 6% (which is 600px of box width) = 94%] / [n of divs]  */
+  width: calc(94% / 3);
+  /* try to add div and increese [n of divs] => see whats heppen. */
+  text-align: center;
+  padding: 20px;
+}
+
+.float {
+  overflow: hidden;
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.float div {
+  background-color: #f00;
+  color: white;
+  float: right;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}

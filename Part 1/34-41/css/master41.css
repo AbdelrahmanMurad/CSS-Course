@@ -1,0 +1,31 @@
+* {
+  -webkit-box-sizing: border-box;
+  /* -moz-box-sizing: border-box; */
+  /* box-sizing: content-box; */
+  box-sizing: border-box;
+  /* widthو الامور الاخرى الى ال padding حتى لا يضيف ال */
+  /* ترتب العناصر وتحسب الأطوال بشكل صحيح */
+  /* width-padding-height-etcوفيها كل ال */
+  /* To understand, read border-box from here:
+  https://www.bigscal.com/blogs/frontend-technology/what-are-the-most-important-topics-in-css-tips/ */
+}
+
+.parent {
+  width: 600px;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ddd;
+}
+
+.one {
+  background-color: #eee;
+  width: 300px;
+  float: left;
+  padding: 10px;
+  border: 1px solid red;
+  /* هنا يجب اضافة ال
+        box-sizing: border-box;
+        يحتاج الى هذه الخاصية يتم اضافتها تلقائيا  border ولكنها مضيوفة فوق عند النجمة، فهكذا كل
+        */
+}

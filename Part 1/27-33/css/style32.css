@@ -1,0 +1,25 @@
+ul {
+  /* الشغلات اللي هنا في المستقبل مش حنستخدمهم */
+  /* before and after حناخد شغلة اسمها  */
+  /* list-style-type: lower-armenian; */
+  /* list-style-position: inside; */
+  /* list-style-position: outside; */
+  /* list-style-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg) ; */
+
+  /* short hand */
+  /* list-style:armenian inside url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg) ; */
+
+  /* اللي جاي مهم جدا */
+  /* reset for ul بدنا نعمل  */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* ايش الحكمة ؟؟ 
+عشان نتحكم فيها من اول وجديد
+*/
+}
+
+li {
+  background-color: #eee;
+  margin-bottom: 20px;
+}

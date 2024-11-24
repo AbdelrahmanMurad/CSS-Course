@@ -1,0 +1,14 @@
+/* opacity العتامة */
+.one {
+    background-color: rgb(21, 255, 0);
+    /* text + background */
+    opacity:0.4;
+}
+
+.two {
+    background-color: rgb(21, 255, 0);
+}
+
+/* https://www.w3schools.com/css/css_image_transparency.asp */
+/* we can use the opacity property in something called modal. open the link.
+https://www.w3schools.com/w3css/w3css_modal.asp  */

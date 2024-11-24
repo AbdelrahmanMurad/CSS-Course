@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  /* to stick it in the top */
+}
+
+div {
+  /* padding-top: 10px;
+    padding-bottom: 10px; */
+  padding: 10px 0px;
+  text-align: center;
+  background-color: #eee;
+  float: left;
+  width: calc((100% - 6%) / 5);
+  margin-left: 1%;
+}
+
+/*  
+    %في حال ال
+    Content Width Is: 100%
+    6 Spaces  (1% margin-left * 6) => 6% From Content Width
+    100% - 6% = 94% Available Space
+    5 Elements The Width Is: (100% - 6%) / 5
+*/
+
+/* -------------------------------------- */
+
+/* 
+div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    float: left;
+    width: calc((100% - 60px) / 5);
+    margin-left: 10px;
+}
+*/
+
+/*
+    pxفي حال ال
+    Content Width Is: 100%
+    6 Spaces  (10px"margin-left: 10px;" * 6) => 60px From Content Width
+    100% - 60px Available Space
+    5 Elements The Width Is: (100% - 60px) / 5
+*/
+
+/*
+5 divs, how many spaces do we have? 5+1=6
+5 divs, how many spaces between them? 5-1=4
+*/
+
+/* https://www.w3schools.com/cssref/func_calc.asp */

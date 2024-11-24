@@ -1,0 +1,65 @@
+/*
+  Animation
+  - Direction {normal - reverse - alternate جربها - alternate-reverse}
+  - Delay {+-}
+  - Fill Mode {none - forwards:styleيأخذ اخر - backwards:styleيأخذ أول - both} directionيعتم على ال
+  - Play State {running - paused: "hoverعلما اننا نحتاج "animationلو وقفت الماوس على العنصر حيوقف ال}
+  - shorthand: 
+        -- The animation property is a shorthand property for:
+            --- animation-name
+            --- animation-duration
+            --- animation-timing-function
+            --- animation-delay
+            --- animation-iteration-count
+            --- animation-direction
+            --- animation-fill-mode
+            --- animation-play-state
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #e8e3e3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  /* animation-name: coloring; */
+  /* animation-duration: 3s; */
+  /* animation-iteration-count: infinite; */
+  /* animation-timing-function: linear; */
+  /* animation-direction: reverse; */
+  /* animation-delay: -2s; */
+  /* animation-fill-mode: both; */
+  /* animation-play-state: running; */
+  animation: coloring 3s linear 2s infinite reverse;
+}
+
+div:hover {
+  /* animation-play-state: running; */
+  animation-play-state: paused;
+}
+
+@keyframes coloring {
+  0% {
+    background-color: red;
+  }
+
+  50% {
+    background-color: blue;
+  }
+
+  100% {
+    background-color: black;
+  }
+}

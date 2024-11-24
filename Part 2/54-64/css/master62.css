@@ -1,0 +1,51 @@
+/*
+ - Grid is different than grid property.
+Grid
+? Parent
+- display: grid |or| inline-grid
+- grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat(), we can Mix]
+    - auto ياخذ مساحة على قدو "خجوول"
+    - fraction ياخذ المساحة الباقية بدون تفاهم "طماع"
+    - شو الافضل ؟؟
+        if you want layout سليم --> fraction
+- grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+----------------------------------------------
+Shorthand for [Row Gap] + [Column Gap]
+    - gap: [Row Gap] [Column Gap]
+----------------------------------------------  
+- justify-content افقي
+- align-content عمودي
+
+? Child
+- grid-column: [Grid-Column-Start] [Grid-Column-End]
+- grid-row: [Grid-Row-Start] [Grid-Row-End]
+"we can use span (n)"
+----------------------------------------------
+*Shorthand for [grid-row] + [grid-column]
+        - grid-area: [Grid-Row-Start] [Grid-Column-Start] [Grid-Row-End] [Grid-Column-End]
+----------------------------------------------  
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px 10px;
+}
+
+.parent div {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}

@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #25d319;
+}
+
+h3 {
+    text-align: center;
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+:root {
+    /* colors */
+    --mainColor: #EEE;
+    --red-orange: #ff5722;
+    --cyan: #03a9f4;
+    --dark-red: #f44336;
+    --blue-gray: #607d8b;
+    --strong-cyan: #009688;
+    --ironstone: #795548;
+    --vivid-orange: #ff9800;
+    --green: #8bc34a;
+    --blue-magenta: #673ab7;
+    --widths: calc(94%/3);
+}
+
+/* assignment one */
+.flex-one div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    /* لتوسطي العنصر عرضيا */
+    background-color: var(--mainColor, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*
+H-shadow, V-shadow, Blur, Spread, Color, Inset
+we will use :H-shadow(6,-6) and V-shadow(0), color;
+*/
+    box-shadow: 6px 0 var(--red-orange, black),
+        -6px 0 var(--cyan, black);
+    color: var(--red-orange, white);
+    font-weight: 900;
+
+}
+
+.flex-two .parent,
+.flex-three .parent,
+.flex-four .parent,
+.flex-five .parent,
+.flex-six .parent {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-color: var(--mainColor, black);
+}
+
+/* assignment two */
+.flex-two .parent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 10px;
+}
+
+.flex-two .parent div {
+    background-color: var(--dark-red, black);
+    color: white;
+    /* بدنا نقسمهم */
+    width: var(--widths);
+    /* 100%-6 Elements */
+    margin: 0px 5px;
+    /* لعرض الشكل كما هو مطلوب بالمسافات */
+    text-align: center;
+    padding: 5px;
+}
+
+/* assignment three */
+.flex-three .parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 10px;
+}
+
+.flex-three .parent div {
+    background-color: var(--blue-gray, black);
+    color: white;
+    /* بدنا نقسمهم */
+    width: var(--widths);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*جديد ؟؟ عشان نوسط الارقام flex ليش في  */
+    /* خاص بالارقامflexيعني  */
+    height: 40px;
+}
+
+.flex-three .parent .one {
+    order: 6;
+    align-self: flex-end;
+}
+
+.flex-three .parent .two {
+    order: 5;
+}
+
+.flex-three .parent .three {
+    order: 2;
+}
+
+.flex-three .parent .four {
+    order: 3;
+}
+
+.flex-three .parent .five {
+    order: 4;
+}
+
+.flex-three .parent .six {
+    order: 1;
+}
+
+.flex-three .parent .two,
+.flex-three .parent .five {
+    height: 50%;
+    align-self: flex-end;
+}
+
+.flex-three .parent .four,
+.flex-three .parent .six {
+    height: 50%;
+    align-self: flex-start;
+}
+
+/* assignment four */
+.flex-four .parent {
+display: flex;
+flex-direction: column;
+    
+}

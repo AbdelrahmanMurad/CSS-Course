@@ -1,0 +1,18 @@
+button {
+  background: transparent;
+  border: none;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  /* cursor: alias; */
+  /* cursor: auto; */
+  /* cursor: cell; */
+  /* cursor: copy; */
+  /* ...etc */
+}
+
+/*
+https://css-tricks.com/almanac/properties/c/cursor/
+https://developer.mozilla.org/en-US/docs/Web/CSS/cursor 
+https://www.w3schools.com/cssref/pr_class_cursor.asp
+ */

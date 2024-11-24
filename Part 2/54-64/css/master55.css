@@ -1,0 +1,68 @@
+/*
+  Gradients التدرجات
+  هو عبارة عن صورة 
+  background-image:linear-gradient(Direction || Angle, Color Stop 1, Color Stop 2, ....etc);
+
+  *Angles
+  - 0degree & 360degree: top
+  - 90degree: right
+  - 180degree: bottom
+  - 260degree: left
+*/
+
+div {
+  width: 400px;
+  height: 200px;
+  background-color: #eee;
+  margin: 20px auto;
+  position: relative;
+  padding: 10px;
+}
+
+div:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  background-color: red;
+  height: 10px;
+  background-image: linear-gradient(
+    to right,
+    #2980b9 20%,
+    #27ae60 20%,
+    #27ae60 40%,
+    #d35400 40%,
+    #d35400 60%,
+    #8e44ad 60%,
+    #8e44ad 80%,
+    #c0392b 80% /* ,#c0392b 100% */
+  );
+
+  /*
+   "px" pixelsممكن نستخدم ال 
+    جرب من غير نسب   
+  */
+}
+
+/*  
+شرح
+background-image: linear-gradient(to right,
+      #2980b9 20%,
+      البداية
+      #27ae60 20%,
+      نهاية ما سبق وبداية اللون الجديد
+      #27ae60 40%,
+      نهاية اللون
+      #d35400 40%,
+      بداية جديدة
+      #d35400 60%,
+      نهاية 
+      #8e44ad 60%,
+      بداية
+      #8e44ad 80%,
+      نهاية
+      #c0392b 80%
+      بدايةولن نحتاج الى نهاية لانه لحاله حيعرف
+      ); 
+      */

@@ -1,0 +1,27 @@
+/*
+  CSS Global Values
+  - inherit
+  - initial => تجلب القيمة الافتراضية 
+  - unset
+    --- If Inherit => inherit
+    --- If Not => initial
+    ---  غلط unsetدير بالك في مواقع شارحة ال
+  - revert CSS Level [4] => user agentتجلب تنسيقات ال
+  - all
+  cssانهم قيم عامة موجودة في كل خواص ال
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+div {
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #eee;
+    padding: 20px;
+    margin: 5px;
+    border: 2px solid black;
+}

@@ -1,0 +1,38 @@
+div {
+    width: 500px;
+    padding: 20px;
+    /* هوامش داخلية */
+    margin: 20px auto;
+}
+
+
+/* نفس عمل السابق 
+.assign-1-shape-1,
+.assign-1-shape-2,
+.assign-1-shape-3 {
+  padding: 20px;
+  width: 500px;
+  margin: 20px auto;
+}  */
+
+
+.assign-1-shape-1 {
+    background-color: blueviolet;
+    /* background-color: rgb(138, 43, 226)let;
+    background-color: hsl(271, 76%, 53%);
+    background-color: #8a2ce2; */
+}
+
+.assign-1-shape-2 {
+    /* background-color: blueviolet; */
+    background-color: rgb(138, 43, 226, 50%);   /*  background-color: rgba(138,43,226,0.5);*/
+    /* background-color: hsl(271, 76%, 53%);
+    background-color: #8a2ce2; */
+}
+
+.assign-1-shape-3 {
+    /* background-color: blueviolet; */
+    background-color: rgb(138, 43, 226, 9%);
+    /* background-color: hsl(271, 76%, 53%);
+    background-color: #8a2ce2; */
+}

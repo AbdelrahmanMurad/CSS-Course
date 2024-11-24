@@ -1,0 +1,104 @@
+/*
+Flexible Box مرن
+floatافضل من ال
+?For Parent
+- display: flex => To Start Flexible Box
+- flex-direction: row => Default Value
+    (row, row-reverse, column, column-reverse)
+- flex-wrap: nowrap => Default Value
+    (nowrap, wrap, wrap-reverse) نستخدمها في حالة وجود عنصر زيادة 
+- shorthand for  [Flex-Direction] + [Flex-Wrap]
+    flex-flow: [Flex-Direction] + [Flex-Wrap]
+- justify-content: flex-start => Default Value
+    (flex-start, flex-end, center, space-betweenبين فقط, space-aroundحول فقط, space-evenlyبين وحول) افقييييي
+    align-contentسنأخذ العمودي في خاصية ال
+    justify ملئ
+*- align-items: stretch => Default Value
+    "بطريقة طولية "عموديةitemsمحاذاة لل
+    10 items يمكن يكون بداخله content يعني ال
+    جميعهم itemsاي ان ال - sنشدد على حرف ال
+    (stretchامتداد, flex-start, flex-end, center)
+
+This CSS property aligns items vertically and accepts the following values:
+- flex-start: Items align to the top of the container.
+- flex-end: Items align to the bottom of the container.
+- center: Items align at the vertical center of the container.
+- baseline: Items display at the baseline of the container.
+- stretch: Items are stretched to fit the container.
+
+https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.flex {
+  background-color: #eee;
+  width: 600px;
+  /* height: 600px; */
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* align-items: flex-start;
+  align-items: flex-end; */
+  align-items: center;
+  /* align-items: baseline;
+  align-items: first baseline;
+  align-items: stretch; */
+}
+
+.flex div {
+  background-color: #f00;
+  color: white;
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 20px;
+}
+
+.flex .one,
+.float .one {
+  height: 80px;
+  /* 
+  - in flex-box all (classes)items will increase the height.
+            -- note that if you increased the height of box 
+                more than classOne, other classes will increase the height,
+                but classOne will not.
+                برضو بضل حسب ترتيب الكود
+                الاولوية  
+  - in float just class(one) will increase the height.
+  -----
+  - align-items will effect in this rule.
+  
+  */
+}
+
+.float {
+  overflow: hidden;
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.float div {
+  background-color: #f00;
+  color: white;
+  float: right;
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 20px;
+}
+
+.center {
+  background-color: blue;
+  color: white;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

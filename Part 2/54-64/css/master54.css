@@ -1,0 +1,35 @@
+/*
+  Filters
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  transition: 0.3s;
+  /*filter: grayscale(100%);
+    filter: blur(4px);
+    */
+  filter: invert(100%);
+  /*filter: brightness(0);
+    filter: contrast(20%);
+    filter: drop-shadow();
+    */
+  -webkit-filter: invert(100%);
+}
+
+img:hover {
+  /* filter: grayscale(0); */
+  /* filter: blur(0px); */
+  filter: invert(0);
+  /* filter: brightness(100%); */
+  /* filter: contrast(100%); */
+  /* filter: drop-shadow(); */
+}
+
+/* https://caniuse.com/
+browserموقع لمعرفة ما المدعوم لل */
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
+/* https://www.w3schools.com/cssref/css3_pr_filter.asp */

@@ -1,0 +1,14 @@
+div {
+  /* Color Name */
+  background-color: red;
+  /* Red, Green, Blue, Alpha Channel */
+  background-color: rgb(0 0 0 / 50%);
+  /* Color Hex Code */
+  background-color: #ff0000;
+  background-image: url("../imgs/How-to-Learn-Programming.png");
+  /* defualt */
+  /* background-repeat: repeat;  */
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+}

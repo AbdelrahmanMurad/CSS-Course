@@ -1,0 +1,59 @@
+/* pseudo classes 
+":className" 
+كلاسس مزيفة
+كلاسس مش موجودة في الصفحة
+
+1.hover 
+بعمل تظليل
+
+2.visited 
+تم زيارة الموقع
+
+3.empty 
+children اي حاجة فاضية ما عندها 
+
+4.checked 
+تم الفحص
+
+5.focus
+ */
+
+/* ! force state ابحث عن  */
+.one {
+  background-color: red;
+  color: white;
+}
+
+.two {
+  background-color: #eeeeee;
+  width: 100px;
+  height: 100px;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+a:visited {
+  color: blue;
+}
+
+/* :empty {
+  border: 10px solid red;
+} */
+/* الفاضية classesال */
+
+/* .ch:checked {
+  display: none;
+} */
+
+/* .in:focus {
+  border-color: yellow;
+  outline: none;
+} */
+/* focus لما يصير عليه  */

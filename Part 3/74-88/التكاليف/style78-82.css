@@ -1,0 +1,73 @@
+* {
+    text-transform: capitalize;
+    margin: 0;
+    /*
+margin : 0 : This will remove space between two paragraphs.
+padding : 0 : This will remove space between the border and text of each paragraph.
+line-height : 20px : This will decrease spacing between different lines in each paragraph. */
+}
+
+#h1 {
+    text-align: center;
+    color: #25d319;
+    text-decoration: underline;
+}
+
+#h2 {
+    text-align: center;
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+/* ass1 */
+.ass-1 div.main.red {
+    color: red;
+}
+
+/* ass2 */
+.ass-2 .parent:first-of-type div:last-child {
+    color: red;
+}
+
+/* .ass-2 .child:nth-child(2) {
+    color: red;
+} */
+
+/* ass3 */
+.ass-3 .baby:only-child {
+    color: red;
+}
+
+/* .ass-3 div:nth-child(2) .baby {
+    color: red;
+} */
+
+/* ass4 */
+.ass-4>[title]:not(.no-need) {
+    color: red;
+}
+
+/* ass5 */
+.ass-5 div:nth-child(2) div {
+    color: red;
+}
+
+/* ass6 */
+.ass-6 div:nth-child(1) div:nth-child(3),
+.ass-6 div:nth-child(2) div:nth-child(4) {
+    color: red;
+}
+
+/* .ass-6 div :nth-last-of-type(2):not([class=no-need] :nth-last-child(2)) {
+    color: red;
+} */
+
+/* ass7 */
+.ass-7 div:first-of-type :nth-last-child(2) {
+    color: red
+}
+
+/* ass8 */
+.ass-8 :not(:first-child):not(:last-child):not(h3) {
+    color: red;
+}

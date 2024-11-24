@@ -1,0 +1,220 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+:root {
+    --header: #03a9f4;
+    --section: #ff5722;
+    --aside: #607d8b;
+    --footer: #009688;
+    --line: #fff;
+
+}
+
+/* ass1 */
+.ass-one .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 50px 1fr;
+    gap: 20px 20px;
+    /* تقريبا margin تشبه ال */
+}
+
+.ass-one .grid div {
+    background-color: #607d8b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    counter-increment: numbers;
+}
+
+.ass-one .grid div::before {
+    content: "Element "counter(numbers);
+    color: white;
+}
+
+/* ass2 */
+
+.ass-two .layout {
+    height: 100vh;
+    background-color: #eee;
+    display: grid;
+    grid-template: 50px auto 50px / repeat(5, 1fr);
+    grid-template-areas: "head head head head head"
+        "section section section side side"
+        "footer footer footer footer footer";
+}
+
+header {
+    grid-area: head;
+    background-color: var(--header, black);
+    padding: 15px;
+}
+
+header::after {
+    content: "header";
+    color: var(--line, black);
+}
+
+section {
+    grid-area: section;
+    background-color: var(--section, black);
+    padding: 15px;
+}
+
+section::after {
+    content: "section";
+    color: var(--line, black);
+}
+
+aside {
+    grid-area: side;
+    background-color: var(--aside, black);
+    padding: 15px;
+}
+
+aside::after {
+    content: "aside";
+    color: var(--line, black);
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--footer, black);
+    padding: 15px;
+}
+
+footer::after {
+    content: "footer";
+    color: var(--line, black);
+}
+
+/* ass3 */
+.ass-three .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    grid-template: 1fr auto / auto 1fr 1fr auto;
+    /* grid-template: 1fr auto / 20px auto auto 20px; */
+    gap: 20px;
+}
+
+.ass-three .grid div {
+    background-color: #403f3f;
+    color: var(--line, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ass4 */
+.ass-four .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "eight eight eight"
+        "two two three"
+        "four five five"
+        "six five five"
+        "seven five five"
+        "one one one";
+}
+
+.ass-four .grid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03a9f4;
+    color: var(--line, black);
+}
+
+.ass-four .grid .one {
+    grid-area: one;
+}
+
+.ass-four .grid .two {
+    grid-area: two;
+}
+
+.ass-four .grid .three {
+    grid-area: three;
+}
+
+.ass-four .grid .four {
+    grid-area: four;
+}
+
+.ass-four .grid .five {
+    grid-area: five;
+}
+
+.ass-four .grid .six {
+    grid-area: six;
+}
+
+.ass-four .grid .seven {
+    grid-area: seven;
+}
+
+.ass-four .grid .eight {
+    grid-area: eight;
+}
+
+/* ass5 */
+.ass-five .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    grid-template: auto auto / 1fr 1fr;
+    /* grid-template: repeat(2, 20px)/repeat(2, auto); */
+    gap: 20px;
+    align-content: space-between;
+}
+
+.ass-five .grid div {
+    background-color: #e91e63;
+    color: var(--line, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ass6 */
+.ass-six{
+    color: #e91e63;
+    text-align: center;
+}
+
+.ass-six a{
+    color: cornflowerblue;
+}

@@ -1,0 +1,106 @@
+* {
+    text-transform: capitalize;
+}
+
+:root {
+    --heading1: #25d319;
+    --heading2: cornflowerblue;
+    --white: #eeeeee;
+    --cyan: #03a9f4;
+    --Ruby: #e91e63;
+}
+
+h1 {
+    text-align: center;
+    color: var(--heading1, black);
+}
+
+h2 {
+    text-align: center;
+    color: var(--heading2, black);
+    text-decoration: underline;
+}
+
+
+
+/* ass-one */
+.ass-one div {
+    background-color: var(--white, black);
+    color: var(--cyan, black);
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+    border: 1.5px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    position: relative;
+
+}
+
+.ass-one div::before {
+    position: absolute;
+    content: "";
+    background-color: var(--cyan, black);
+    width: 308px;
+    height: 208px;
+    z-index: -1;
+    transform: rotate(-10deg);
+}
+
+.ass-one div::after {
+    position: absolute;
+    content: "";
+    background-color: var(--Ruby, black);
+    width: 308px;
+    height: 208px;
+    z-index: -2;
+    transform: rotate(10deg);
+}
+
+/* ass-two */
+.ass-two {
+    width: 200px;
+    height: 200px;
+    margin: 80px auto;
+    color: #000000;
+    background-color: var(--white);
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.ass-two::before,
+.ass-two::after {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+}
+
+.ass-two::before {
+    width: 200px;
+    height: 200px;
+    border: 10px solid var(--Ruby);
+    border-left-color: transparent;
+    transition: .5s 0s ease;
+}
+
+.ass-two::after {
+    width: 220px;
+    height: 220px;
+    border: 10px solid var(--cyan);
+    border-right-color: transparent;
+    transition: .5s .5s ease;
+}
+
+/* ass-three */
+.ass-two:hover::before,
+.ass-two:hover::after {
+    transform: rotate(1turn);
+}

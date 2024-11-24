@@ -1,0 +1,20 @@
+div {
+  background-color: #f9f9f9;
+  text-align: center;
+  direction: ltr;
+  /* 
+        ltr:leftToRight
+        rtl:rightToLeft
+     */
+}
+
+/* diff between text-align and direction:
+1. text-align: right; instructs the browser to align the text to the right side of the container.
+2. direction: rtl; instructs the browser how the text is displayed, either from left to right or right to left.
+ Some countries write from right to left (as opposed to left to right as you are probably used to). */
+img {
+  vertical-align: middle;
+}
+
+/* vertical-align:
+https://www.w3schools.com/cssref/pr_pos_vertical-align.asp */

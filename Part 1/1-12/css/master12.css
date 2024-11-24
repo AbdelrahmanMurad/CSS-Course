@@ -1,0 +1,28 @@
+div {
+  background-color: red;
+  margin: 10px 0;
+}
+
+.first {
+  /* display: none; */
+  visibility: hidden;
+}
+
+/* display: none; is commonly used with JavaScript to hide(remove) and show elements without deleting and recreating them.
+ Take a look at our last example on this page if you want to know how this can be achieved. */
+/* https://www.w3schools.com/css/css_display_visibility.asp */
+
+/* The visibility property specifies whether or not an element is visible.
+Tip: Hidden elements take up space on the page.
+ Use the display property to both hide and remove an element from the document layout! */
+/* https://www.w3schools.com/cssref/pr_class_visibility.asp */
+
+/* What is the difference between display:none; and visibility:hidden; style? 
+visibility: hidden; hides the element, but it still takes up space in the layout. 
+display: none; removes the element completely from the document,
+        It does not take up any space, even though the HTML for it is still in the source code */
+
+/** من الاخر: 
+display: none; حذف 
+visibility: hidden; اخفاء       
+*/

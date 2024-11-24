@@ -1,0 +1,23 @@
+div {
+    background-color: #eee;
+    width: 400px;
+    margin: 30px;
+    padding: 20px;
+}
+
+.shape-1 {
+    border-left: 8px solid rgb(236, 65, 99);
+    outline: #eee 20px solid;
+}
+
+.shape-2 {
+    display: inline-block;
+    border-left: 8px solid;
+    outline: #eee 20px solid;
+    visibility: hidden;
+}
+
+.shape-3 {
+    border-left: 8px solid rgb(14, 142, 151);
+    outline: #eee 20px solid;
+}

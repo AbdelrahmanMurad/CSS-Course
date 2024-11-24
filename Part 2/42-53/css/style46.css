@@ -1,0 +1,74 @@
+/*
+Flexible Box مرن
+floatافضل من ال
+?For Parent
+*- display: flex => To Start Flexible Box
+*- flex-direction: row => Default Value
+    (row, row-reverse, column, column-reverse)
+*- flex-wrap: nowrap => Default Value
+    (nowrap, wrap, wrap-reverse) نستخدمها في حالة وجود عنصر زيادة 
+*- shorthand for  [Flex-Direction] + [Flex-Wrap]
+    flex-flow: [Flex-Direction] + [Flex-Wrap]
+
+This CSS property defines the:
+
+1- direction items are placed in the container, and accepts the following values:
+- row: Items are placed the same as the text direction.
+- row-reverse: Items are placed opposite to the text direction.
+- column: Items are placed top to bottom.
+- column-reverse: Items are placed bottom to top
+  
+2- flex-wrap property, which accepts the following values:
+- nowrap: Every item is fit to a single line.
+- wrap: Items wrap around to additional lines.
+- wrap-reverse: Items wrap around to additional lines in reverse.
+
+https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp 
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* flex-box */
+.flex {
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: column-reverse;
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+}
+
+/* inside the flex-box */
+.flex div {
+  background-color: #f00;
+  color: white;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+  /* margin: 1px; */
+}
+
+/* float box */
+.float {
+  overflow: hidden;
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  /* flexمثل ال floatصعب جدا نتحكم بالعناصر عن طريق ال */
+}
+
+.float div {
+  background-color: #f00;
+  color: white;
+  float: right;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}

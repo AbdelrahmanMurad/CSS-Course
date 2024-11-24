@@ -1,0 +1,26 @@
+.parent {
+  background-color: red;
+  padding: 10px;
+}
+
+.parent div {
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+  padding: 10px 0px;
+  text-align: center;
+  background-color: #eee;
+  width: 25%;
+  /* float تجعل العناصر تعوم في الصفحة */
+  float: left;
+  /*display:inline-blockوظيفتها تقريبا مثل ال*/
+  overflow: hidden;
+}
+
+.clear {
+  clear: both;
+  /* الوظيفة: مثل التنظيف، حتنزل السطر التالي
+     This Is P For Testing Float 
+     parentعن ال*/
+}
+
+/* https://www.w3schools.com/cssref/pr_class_float.asp */

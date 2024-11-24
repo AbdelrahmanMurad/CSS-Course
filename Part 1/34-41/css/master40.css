@@ -1,0 +1,24 @@
+/*
+H-shadow, V-shadow, Blur, Spread, Color, Inset
+ */
+
+div {
+  padding: 20px;
+  background-color: #eee;
+  margin: 20px auto;
+  width: 300px;
+  /* box-shadow: 0 0 10px 0 #f10000 inset; */
+  box-shadow: 0 0 10px 0 #f10000;
+  /*
+     0 0 10px 0 #000 inset,
+     0 0 10px 0 #080,
+     0 0 10px 0 #00f,
+     0 0 10px 0 yellow;
+  */
+}
+
+/* https://www.bing.com/images/search?q=box%20shadow%20css&qs=n&form=QBIR&sp=-1&pq=box%20shadow%20cs&sc=8-13&cvid=9A437C39658E4A1C958CCC557DB76480&ghsh=0&ghacc=0&first=1&tsc=ImageHoverTitle */
+/* https://www.bing.com/images/search?q=box%20shadow%20css%20navbar&qs=NM&form=QBIR&sp=1&pq=box%20shadow%20css%20in%20nav%20&sc=1-22&cvid=E61CC5F52E2F4FC9A94DEC06A365895D&ghsh=0&ghacc=0&first=1&tsc=ImageHoverTitle */
+/* https://www.bing.com/images/search?q=box%20shadow%20inset%20css&qs=n&form=QBIR&sp=-1&pq=box%20shadow%20inset&sc=8-16&cvid=6F7AEDA897F244CEBC4E9455BE7404CC&ghsh=0&ghacc=0&first=1&tsc=ImageHoverTitle */
+/* مهم
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */

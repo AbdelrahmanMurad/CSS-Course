@@ -1,0 +1,151 @@
+/*
+H-shadow, V-shadow, Blur, Spread, Color, Inset
+ */
+
+h1 {
+    text-align: center;
+    color: #25d319;
+}
+
+h3 {
+    text-align: center;
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+.one,
+.two {
+    margin: 60px auto;
+    width: fit-content;
+}
+
+/* assignment one */
+.one div {
+    position: relative;
+    counter-increment: numbers;
+    display: inline-block;
+    background-color: #EEEEEE;
+    width: 100px;
+    height: 100px;
+    margin-left: 60px;
+    border: 3px solid #000000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    box-shadow: -6px -6px #E91E63,
+        6px 6px #2196F3;
+}
+
+.one div::after {
+    content: "Element";
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin-top: -10px;
+}
+
+.one div::before {
+    content: counter(numbers);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 50%;
+    text-align: center;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+/* assignment two */
+.two div {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #DCDCDC;
+    border-radius: 5px 50px;
+    box-shadow: inset 0px 0px 12px;
+    /*
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 10px 25px;
+    border-bottom-right-radius: 10px 25px;
+    box-shadow: 5px 5px 10px #7F7F7F inset,
+    -5px -5px 10px #7F7F7F inset; 
+    */
+}
+
+/* assignment three */
+.three {
+    width: 550px;
+    margin: 60px auto;
+    text-transform: capitalize;
+}
+
+.three div {
+    display: inline-block;
+    background-color: #EEEEEE;
+    margin: 20px;
+    width: 150px;
+    height: 250px;
+    padding: 30px;
+}
+
+.three span {
+    background-color: #03a9f4;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.three .basic span {
+    padding: 8px 40px;
+    /*مهمة*/
+}
+
+.three .pro span {
+    padding: 8px 50px;
+    /*مهمة*/
+}
+
+.three div p {
+    background-color: #DCDCDC;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    line-height: 7.5;
+    margin-top: 45px;
+}
+
+.three .pro {
+    position: relative;
+}
+
+.three .pro::before {
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 100%;
+    background-color: #03a9f4;
+    left: -24px;
+    top: 0px;
+}
+
+.three .pro::after {
+    content: "or";
+    position: absolute;
+    text-transform: lowercase;
+    color: white;
+    background-color: #03a9f4;
+    padding: 5px;
+    border-radius: 50%;
+    left: -36px;
+    top: 50%;
+}

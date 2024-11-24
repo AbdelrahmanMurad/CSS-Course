@@ -1,0 +1,16 @@
+/*
+لعمل دائرة يجب ان يكون الطول والعرض مساويين لبعضهم ونصف القطر يكون نص الطول والعرض اي 50%. ش
+*/
+
+div {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin: 20px auto;
+  border-radius: 6px;
+  /* border-radius: 75px; */ 
+  /* border-top-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px; */
+}
+
+/* https://www.bing.com/images/search?q=css%20border-radius&qs=n&form=BESBTB&sp=-1&pq=css%20border-radi&sc=8-15&cvid=38308E2BC9414EFC8F34677814D0268F&ghsh=0&ghacc=0&first=1&tsc=ImageHoverTitle */

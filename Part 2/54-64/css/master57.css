@@ -1,0 +1,41 @@
+/*
+ - Grid is different than grid property.
+Grid
+? Parent
+*- display: grid |or| inline-grid
+*- grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat(), we can Mix]
+    - auto ياخذ مساحة على قدو "خجوول"
+    - fraction ياخذ المساحة الباقية بدون تفاهم "طماع"
+    - شو الافضل ؟؟
+        if you want layout سليم --> fraction
+  
+  - What is the difference between [auto and 1FR] in CSS grid?
+        When fr and auto are used together,
+        fr “wins” the fight for remaining space and auto loses its width value,
+        shrinking down to the min-width of its element content.
+
+    https://www.w3schools.com/css/css_grid.asp
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, auto) repeat(2, 1fr); */
+}
+
+.parent div {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}

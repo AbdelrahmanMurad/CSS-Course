@@ -1,0 +1,30 @@
+/* 2D Transform
+    - scaleX()
+    - scaleY()
+    - scale(X,Y)
+*/
+div {
+  margin: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255 0 0 / 39%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.t:hover {
+  transition: 1.5s;
+  transform: scale(2);
+  /* 2D Transform */
+  /* transform: scaleX(2); */
+  /* transform: scaleY(2); */
+  /* transform: scale(2, 2); */
+  /* transform: scale(2); */
+  /* same */
+  /* transform: scaleX(-2); */
+  /*  this will flip the element */
+}

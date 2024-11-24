@@ -1,0 +1,67 @@
+/*
+CSS Selectors
+============
+== Part 1 ==
+============
+    - *
+    - Element => [p, div, h2]
+    - Element OtherElement => div p
+    - .class-name
+    - #id-name
+    - .parent .child => not direct Child
+    - .parent > .child => Direct Child مباشرة
+    - .class-one.class-two =>  elementكلاسين في نفس ال
+    - .class-name div, .class-name p
+    - Element.class-name => p.class-name تحديد خاص
+============
+== Part 2 ==
+============
+    - Element + Other Element => [div + p] العنصر التالي مباشرة
+    - Element ~ Other Elements => [p ~ div] siblings   pاباه divتخصيص كل 
+    - [Attribute] => [title]
+    - Element[Attribute] => div[title]
+    - [Attribute=Value] => [title="S01"]
+    - Element[Attribute=Value] => input[type="submit"]
+    - [Attribute~=Value] => Contains A Word
+    - [Attribute*=Value] => Contains A Atring
+    - [Attribute^=Value] => Start With A String
+============
+== Part 3 ==
+============
+    - :first-child الاول من الأبناء
+    - :last-child الاخر من الابناء
+    - :first-of-type الاول من نوعه
+    - :last-of-type الاخر من نوعه
+    - :only-child الابن الوحيد
+    - :only-of-type الوحيد من نوعه
+============
+== Part 4 ==
+============
+    - :not(Selectors) نفي
+    - :nth-child(n) => p:nth-child(2) الابن رقم اثنان
+        --- p:nth-child(even/odd) الابناء الزوجية او الفردية
+    - :nth-last-child(n)  افضل من اللي قبل في العد
+    - :nth-of-type(n) افضل من اللي قبل
+    - :nth-last-of-type(n)
+============
+== Part 5 ==
+============
+    - :root
+    - :checked
+    - :empty
+    - :disabled
+    - :required
+    - :focus
+    - ::selection
+    - ::placeholder
+=============
+=== Links ===
+=============
+https://www.w3schools.com/cssref/css_selectors.asp
+https://css-tricks.com/examples/nth-child-tester/
+https://www.crstin.com/css-nth/
+=============
+=== Notes ===
+=============
+يجب عد هذا السطر lastعند استخدام ال  
+<script type="text/javascript">…</script>

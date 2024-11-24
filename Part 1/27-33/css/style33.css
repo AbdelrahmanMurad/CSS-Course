@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  width: 100%;
+  /* border: 1px solid #CCC; */
+  /*  لانو الألوان محددة الجدول،borderمش محتاجين ال */
+  border-spacing: 0;
+  /* spacing بعمل  
+    0 , 1
+    */
+}
+
+table td {
+  padding: 15px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+table thead td {
+  background-color: #f44336;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-color: #f35246;
+}

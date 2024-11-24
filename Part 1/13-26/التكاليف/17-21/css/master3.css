@@ -1,0 +1,18 @@
+div {
+    background-color: whitesmoke;
+    width: 400px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.two {
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* في مشكلة هنا */
+
+.three {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

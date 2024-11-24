@@ -1,0 +1,66 @@
+/* لا يوجد أي Code في الدرس. والفيديو كله عبارة عن حل للعبة Flex Froggy
+
+*Here All of the Information
+
+Flexible Box مرن
+floatافضل من ال
+?For Parent
+- display: flex => To Start Flexible Box
+- flex-direction: row => Default Value
+    (row, row-reverse, column, column-reverse)
+- flex-wrap: nowrap => Default Value
+    (nowrap, wrap, wrap-reverse) نستخدمها في حالة وجود عنصر زيادة 
+----------------------------------------------------------------------------------
+shorthand for  [Flex-Direction] + [Flex-Wrap]
+      flex-flow: [Flex-Direction] + [Flex-Wrap]
+----------------------------------------------------------------------------------
+- justify-content: flex-start => Default Value
+    (flex-start, flex-end, center, space-betweenبين فقط, space-aroundحول فقط, space-evenlyبين وحول) افقييييي
+    align-contentسنأخذ العمودي في خاصية ال
+    justify ملئ
+- align-items: stretch => Default Value
+    "بطريقة طولية "عموديةitemsمحاذاة لل
+    10 items يمكن يكون بداخله content يعني ال
+    جميعهم itemsاي ان ال - sنشدد على حرف ال
+    (stretchامتداد, flex-start, flex-end, center)
+- align-content: stretch => Default Value
+    كاملcontentبتوزع على ال
+    (stretch, flex-start, flex-end, center,
+    space-between, space-around,space-evenly"عمووديييي") 
+
+?For Child
+- flex-grow: 0 => Default Value نمو
+- flex-shrink: 1 => Default Value انكماش
+- order: 0 => Default Value
+            (growXshrink)
+- flex-basis: auto => Default Value يوزع الأبعاد اوتوماتيك
+      ؟؟؟widthو الflex-basis ما العلاقة بين ال
+      --flex-basis: flex-directionوذلك عن طريق الwidth + heightله علاقة بال
+            يتم تجاهلهwidthاذا ال flex basisلما يكون موجود ال
+----------------------------------------------------------------------------------
+shorthand for  [Flex Grow] + [Flex Shrink] + [Flex Basis]
+      flex: [Flex Grow] [Flex Shrink] [Flex Basis] => 0 1 Auto (Default Value)
+----------------------------------------------------------------------------------
+- align-self: auto => Default Value
+    auto- flex-start - flex-end - center - stretch 
+##################################################################################
+
+1- Notice that when you set the direction to a reversed row or column, start and end are also reversed. العكس
+2- Notice that when the flex direction is a column, justify-content changes to the vertical and align-items to the horizontal. العكس
+3- Sometimes reversing the row or column order of a container is not enough.
+   In these cases, we can apply the order property to individual items. By default, items have a value of 0,
+   but we can use this property to also set it to a positive or negative integer value (-2, -1, 0, 1, 2).
+
+*Games to learn flex-box:
+- https://flexboxfroggy.com/ 
+- https://mastery.games/flexboxzombies/ 
+
+*Information from the Game:
+- Good to remember: flex-basis is just a hypothetical size before any growing or shrinking begins.
+- This new align-content setting is a lot like align-items except it controls the wrapped lines rather than the individual zombies in those lines.
+    1. The flex shortcut goes on the targets, and sets flex-grow, flex-shrink, and flex-basis all at once.
+    2. You have to specify at least the flex-grow. The other two arguments are optional and default to flex-shrink: 1 and flex-basis: 0px, which is different than the usual default of flex-basis: auto.
+    3. Setting flex: auto is the same as setting flex-grow: 1, flex-shrink: 1, and flex-basis: auto.
+    4. Setting flex: none is the same as setting flex-grow: 0, flex-shrink: 0, and flex-basis: auto.
+    5. flex-flow sets both flex-direction and flex-wrap at the same time.
+*/

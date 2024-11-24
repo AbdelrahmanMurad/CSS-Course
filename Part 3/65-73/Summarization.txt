@@ -1,0 +1,54 @@
+- 2D Transform
+
+    1- scale نلعب بحجم الصورة
+		-- scaleX()
+		-- scaleY()
+		-- scale(X,Y)
+    2- Rotate
+		-- UNITS[
+			- deg => Degrees (0 - 90- 180 - 270 - 360) وما بين الارقام
+			- rad => Radians
+			- grad => Gradians
+			- turn => Turn
+		] 
+			deg الأكثر استخداما هي 
+    3- Translate 
+		-- احسن خاصية لتحريك العناصر
+		-- marginاحسن من ال
+    4- Skew 	 انحراف للعنصر
+		-- skewX()
+		-- skewY()
+		-- skew(X,Y)
+    5- matrix
+		-- matrix(scaleX,skewY,skewX,scaleY,translateX,translateY)
+		  طريقة الحفظ --> scale, skew, skew, scale, translate, translate: X Y X Y X Y
+	6- transform-origin المنشأ
+		-- Syntax
+				Default Values => 50% 50% 0
+				2D Transform => transform-origin(X, Y)
+				3D Transform => transform-origin(X, Y, Z)
+					X-Axis
+						- CSS Unit [px, em, rem]
+						- %
+						- Keyword
+						---- Left = 0%
+						---- Center = 50%
+						---- Right = 100%
+					Y-Axis
+						- CSS Unit [px, em, rem]
+						- %
+						- Keyword
+						---- Top = 0%
+						---- Center = 50%
+						---- Bottom = 100%
+
+- 3D Transform
+
+	1- transform: rotate3d(0, 1, 1, 65deg); 
+	2- translate3d(50px, 50px, 100px);
+	3- backface-visibility
+	4- transform-style
+	5- perspective
+	6- perspective-origin
+
+https://polypane.app/css-3d-transform-examples/

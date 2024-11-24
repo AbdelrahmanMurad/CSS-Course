@@ -1,0 +1,37 @@
+/*
+ Explanation of the different parts:
+
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+The box model allows us to add a border around elements, and to define space between elements. 
+ The outline between border and margin.
+ */
+div {
+  background-color: #ddd;
+  width: 70%;
+  padding: 10px;
+
+  /* margin-left: 15%; */
+  /* 70 width + 10 padding + 15 margin-left = 95 */
+  /* margin-right: 15%; */
+
+  /* margin: 0% 15% 0% 15%; */
+  /* margin: 0% 15% 0%; */
+  /*Top Right Bottom Left */
+
+  margin: auto;
+  /* 30% */
+}
+/*! we cannot apply color to the margin. */
+/* 
+!Padding only takes positive values.
+!Negatives are ignored or treated as 0, which would have the same effect: none.
+*Margins can have negative values, as can other position related properties, but not padding.  
+*/
+
+/* 
+  Box model: content, padding, border. The margin outside the box.
+  The outline between border and margin.
+*/

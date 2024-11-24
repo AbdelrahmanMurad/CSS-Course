@@ -1,0 +1,67 @@
+<!-- لا يوجد أي Code في الدرس. والفيديو كله عبارة عن حل للعبة Grid Garden
+ 
+ - Grid is different than grid property.
+Grid Garden
+? Parent
+- display: grid |or| inline-grid
+- grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat(), we can Mix]
+    - auto ياخذ مساحة على قدو "خجوول"
+    - fraction ياخذ المساحة الباقية بدون تفاهم "طماع"
+    - شو الافضل ؟؟
+        if you want layout سليم => fraction
+- grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+----------------------------------------------
+Shorthand for [Row Gap] + [Column Gap]
+- gap: [Row Gap] [Column Gap]
+----------------------------------------------
+- justify-content افقي
+- align-content عمودي
+
+? Child
+- grid-column: [Grid-Column-Start] [Grid-Column-End]
+- grid-row: [Grid-Row-Start] [Grid-Row-End]
+"we can use span (n)"
+----------------------------------------------
+*Shorthand for [grid-row] + [grid-column]
+- grid-area: [Grid-Row-Start] [Grid-Column-Start] [Grid-Row-End] [Grid-Column-End]
+----------------------------------------------
+
+search:
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+https://css-tricks.com/snippets/css/complete-guide-grid/
+https://www.w3schools.com/css/css_grid_item.asp
+
+search:
+1- what is the difference between autofit and autofill ??
+
+Fill or Fit? What’s the difference?
+auto-fill FILLS the row with as many columns as it can fit. So it creates implicit columns whenever a new column can
+fit, because it’s trying to FILL the row with as many columns as it can. The newly added columns can and may be empty,
+but they will still occupy a designated space in the row.
+auto-fit FITS the CURRENTLY AVAILABLE columns into the space by expanding them so that they take up any available space.
+The browser does that after FILLING that extra space with extra columns (as with auto-fill ) and then collapsing the
+empty ones.
+link->
+https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/#:~:text=auto%2Dfit%20FITS%20the%20CURRENTLY,then%20collapsing%20the%20empty%20ones.
+
+2- character (ch) unit in web design
+The ch unit lets you limit the width of text elements by character count — more specifically, the width of the “0”
+character for a given font
+link-> https://webflow.com/feature/control-width-of-text-elements-by-character-count-using-ch-unit
+
+
+1- grid-column-start
+2- grid-column-end
+3- [grid-column]
+4- grid-row-start
+5- grid-row-end
+6- [grid-row]
+7- [grid-area]
+8- order {By default, all grid items have an order of 0, but this can be set to any positive or negative value, similar
+to z-index.}
+9- grid-template-columns
+10- grid-template-rows --- "dont forget the s (rows-columns)"
+11- [repeat(number of columns, %)]
+note: You can even mix different units together.
+13- grid-template: rows /columns
+-->

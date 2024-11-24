@@ -1,0 +1,10 @@
+div {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+p {
+    text-transform: uppercase;
+}
+
+/* https://www.google.com/search?q=Font+Style+And+Variant+And+Weight&oq=Font+Style+And+Variant+And+Weight&sourceid=chrome&ie=UTF-8 */

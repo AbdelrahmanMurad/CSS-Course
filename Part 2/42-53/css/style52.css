@@ -1,0 +1,84 @@
+/*
+Flexible Box مرن
+floatافضل من ال
+?For Parent
+- display: flex => To Start Flexible Box
+- flex-direction: row => Default Value
+    (row, row-reverse, column, column-reverse)
+- flex-wrap: nowrap => Default Value
+    (nowrap, wrap, wrap-reverse) نستخدمها في حالة وجود عنصر زيادة 
+----------------------------------------------------------------------------------
+shorthand for  [Flex-Direction] + [Flex-Wrap]
+      flex-flow: [Flex-Direction] + [Flex-Wrap]
+----------------------------------------------------------------------------------
+- justify-content: flex-start => Default Value
+    (flex-start, flex-end, center, space-betweenبين فقط, space-aroundحول فقط, space-evenlyبين وحول) افقييييي
+    align-contentسنأخذ العمودي في خاصية ال
+    justify ملئ
+- align-items: stretch => Default Value
+    "بطريقة طولية "عموديةitemsمحاذاة لل
+    10 items يمكن يكون بداخله content يعني ال
+    جميعهم itemsاي ان ال - sنشدد على حرف ال
+    (stretchامتداد, flex-start, flex-end, center)
+- align-content: stretch => Default Value
+    كاملcontentبتوزع على ال
+    (stretch, flex-start, flex-end, center,
+    space-between, space-around,space-evenly"عمووديييي") 
+
+?For Child
+- flex-grow: 0 => Default Value نمو
+- flex-shrink: 1 => Default Value انكماش
+- order: 0 => Default Value
+            (growXshrink)
+- flex-basis: auto => Default Value يوزع الأبعاد اوتوماتيك
+      ؟؟؟widthو الflex-basis ما العلاقة بين ال
+      --flex-basis: flex-directionوذلك عن طريق الwidth + heightله علاقة بال
+            يتم تجاهلهwidthاذا ال flex basisلما يكون موجود ال
+----------------------------------------------------------------------------------
+shorthand for  [Flex Grow] + [Flex Shrink] + [Flex Basis]
+      flex: [Flex Grow] [Flex Shrink] [Flex Basis] => 0 1 Auto (Default Value)
+----------------------------------------------------------------------------------
+*- align-self: auto => Default Value
+    auto- flex-start - flex-end - center - stretch 
+
+- The align-self property specifies the alignment for the selected item inside the flexible container.
+  - The align-self property overrides the default alignment set by the container's align-items property.
+  - Aligns a flex item along the cross axis, overriding the align-items value.
+    
+!see w3school examples
+https://www.w3schools.com/CSS/css3_flexbox_items.asp 
+https://www.w3schools.com/CSSref/css3_pr_align-self.php
+
+
+
+1- Notice that when you set the direction to a reversed row or column, start and end are also reversed. العكس
+2- Notice that when the flex direction is a column, justify-content changes to the vertical and align-items to the horizontal. العكس
+3- Sometimes reversing the row or column order of a container is not enough.
+   In these cases, we can apply the order property to individual items. By default, items have a value of 0,
+   but we can use this property to also set it to a positive or negative integer value (-2, -1, 0, 1, 2).
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.flex {
+  background-color: #eee;
+  width: 800px;
+  height: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex div {
+  background-color: #f00;
+  color: white;
+  width: 80px;
+  text-align: center;
+  padding: 20px;
+  margin-right: 5px;
+  flex-grow: 1;
+}

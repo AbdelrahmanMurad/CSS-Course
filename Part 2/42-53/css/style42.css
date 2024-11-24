@@ -1,0 +1,42 @@
+/* Transition different than Animation.
+
+Is Transition in css better than Animation ?
+It depends on the specific use case and what you are trying to achieve with your CSS effects.
+
+Transitions in CSS are a simple way to animate CSS properties over a specified duration. They are useful for creating subtle, smooth, and elegant changes between states. For example, you can use transitions to fade in and out images, change the background color of a button when it's hovered over, or smoothly scale an element as it's clicked.
+
+Animations, on the other hand, are more powerful and flexible than transitions. They allow you to create more complex and dynamic effects with more control over timing, easing, and the sequence of the animation. You can use animations to create eye-catching effects, such as bouncing, sliding, or rotating elements, and to create more complex transitions between different states of an interface.
+
+So, if you want to create a simple, smooth, and subtle effect, then transitions are the better choice. However, if you want to create more complex and dynamic effects, or if you need more control over the timing and sequence of the animation, then animations are the better choice.
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.one {
+  background-color: #eee;
+  width: 200px;
+  height: 100px;
+  transition-duration: 10s;
+  transition-delay: 0.2s;
+  transition-property: width;
+  transition-timing-function: ease-in-out;
+  transition: all 2s 0.5s linear;
+  -webkit-transition: all 2s 0.5s linear;
+  -moz-transition: all 2s 0.5s linear;
+  -ms-transition: all 2s 0.5s linear;
+  -o-transition: all 2s 0.5s linear;
+}
+
+.one:hover {
+  width: 280px;
+  height: 120px;
+}
+
+/* 
+CSS Transitions
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions
+https://www.w3schools.com/css/css3_transitions.asp
+*/

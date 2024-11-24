@@ -1,0 +1,22 @@
+/* Selector {
+    Property: Value;    this line named a declaration.
+    PropertyTwo: Value      declaration_2
+} */
+
+.my-p {
+  /* . for calling the class */
+  color: red;
+  font-size: 40px;
+  /* 
+    .my-p   => Selector
+    color   => Property
+    red     => Value
+    color: red; => declaration
+    */
+}
+
+#my-p {
+  /* # for calling the id */
+  color: red;
+  font-size: 40px;
+}

@@ -1,0 +1,170 @@
+* {
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+
+#h1 {
+    text-align: center;
+    color: #25d319;
+    text-decoration: underline;
+}
+
+#h2 {
+    text-align: center;
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+/* ass1 */
+.one {
+    width: 50px;
+    height: 50px;
+    margin: 60px auto;
+    background-color: #FCFCFF;
+    border-radius: 50%;
+    border: 5px solid #EB175D;
+    border-top-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ass-one 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.one::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    border: 5px solid #0A90FF;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+}
+
+.one::after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 5px solid #FCA400;
+    border-radius: 50%;
+    border-left-color: transparent;
+}
+
+.one:hover {
+    animation-play-state: paused;
+}
+
+@keyframes ass-one {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ass2 */
+.two {
+    width: 50px;
+    height: 50px;
+    margin: 60px auto;
+    background-color: #FCFCFF;
+    border-radius: 50%;
+    border: 5px solid #2090BD;
+    border-bottom-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ass-two 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+
+.two::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    border: 5px solid #FC9900;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    animation: ass-two 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+
+}
+
+.two::after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 5px solid #000000;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    animation: ass-two 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+@keyframes ass-two {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.two:hover:hover,
+.two:hover::after,
+.two:hover::before {
+    animation-play-state: running;
+}
+
+/* ass3 */
+.three {
+    width: 50px;
+    height: 50px;
+    margin: 60px auto;
+    background-color: #f3f3c0;
+    border-radius: 50%;
+    border: 5px solid #000;
+    border-bottom-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ass-three 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes ass-three {
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+
+/* ass4 */
+.four {
+    color: #e91e63;
+    text-align: center;
+}
+
+.four a {
+    color: cornflowerblue;
+}

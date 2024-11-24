@@ -1,0 +1,47 @@
+/*
+?perspective منظور
+  - The perspective property is used to give a 3D-positioned element some perspective.
+  - The perspective property defines how far the object is away from the user. So, a lower value will result in a more intensive 3D effect than a higher value.
+  *- When defining the perspective property for an element, it is the CHILD elements that get the perspective view, NOT the element itself.
+  - Tip: Also look at the perspective-origin property, which defines at which position the user is looking at the 3D object.
+?perspective-origin
+  - The perspective-origin property defines at from which position the user is looking at the 3D-positioned element.
+  *- When defining the perspective-origin property for an element, it is the CHILD elements that will get the effect, NOT the element itself.
+  - Note: This property must be used in conjunction with the perspective property!
+https://www.w3schools.com/cssref/css3_pr_perspective.asp
+perspective origin
+https://www.w3schools.com/cssref/css3_pr_perspective-origin.asp 
+*/
+
+.shape {
+  /* perspective: 0px; */
+  /* perspective: 100px; */
+  /* perspective: 800px; */
+  perspective: 300px;
+  /* perspective-origin: left center; */
+  perspective-origin: center center;
+}
+
+.shape div {
+  margin: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255 0 0 / 39%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.shape div:hover {
+  transition: 0.5s;
+  /* transform: translate(100px, -100px); */
+  /* transform: translateX(100px); */
+  /* transform: translateZ(100px); */
+  /* transform: translate3d(0px, 0px, 100px); */
+  transform: translate3d(50px, 50px, 100px);
+}
+
+/* https://polypane.app/css-3d-transform-examples/ */

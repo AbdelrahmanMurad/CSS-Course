@@ -1,0 +1,31 @@
+div {
+  background-color: red;
+  padding: 10px;
+  display: inline-block;
+  /* width: fit-content; */
+  /* content - The content of the box, where text and images appear. */
+  /* max-width: 900px; */
+  /* 900px: fit-contentمش حتأثر لانو استخدمنا ال */
+  /* max-width: 100px; */
+  /* max-width: 200px; */
+}
+
+/*
+----------------------------------------------
+display: inline-block; vs width: fit-content;
+----------------------------------------------
+answer: 
+    ?width: fit-content;
+    means : "Use the space you can (available) but never less than your min-content 
+    and never more than your max-content " 
+
+    ?display: inline-block;
+    Compared to display: inline , the major difference is that display: 
+    inline-block allows to set a width and height on the element. 
+    Also, with display: inline-block , 
+    the top and bottom margins/paddings are respected, 
+    but with display: inline they are not.
+
+
+
+*/

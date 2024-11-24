@@ -1,0 +1,26 @@
+Animation
+  - KeyFrames
+  - Name
+  - Duration
+
+  - Iteration Count
+  - Timing Function
+  - Spinner Loading
+
+  - Direction {reverse - alternate - alternate-reverse}
+  - Delay {+-}
+  - Fill Mode {none - forwards:styleيأخذ اخر - backwards:styleيأخذ أول - both} directionيعتم على ال
+  - Play State {running - paused: "hoverعلما اننا نحتاج "animationلو وقفت الماوس على العنصر حيوقف ال}
+ 
+  - Shorthand: 
+        -- The animation property is a shorthand property for:
+            --- animation-name
+            --- animation-duration
+            --- animation-timing-function
+            --- animation-delay
+            --- animation-iteration-count
+            --- animation-direction
+            --- animation-fill-mode
+            --- animation-play-state
+  
+  - Loading Animation

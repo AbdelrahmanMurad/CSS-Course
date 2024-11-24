@@ -1,0 +1,7 @@
+div {
+    text-transform: capitalize;
+    /* text-shadow: 1px 0 0 red, 2px 0 0 blue; */
+    text-shadow: rgb(246, 67, 102) 1px 1px,
+        rgb(67, 130, 246) 2px 2px,
+        rgb(177, 83, 253) 3px 3px;
+}

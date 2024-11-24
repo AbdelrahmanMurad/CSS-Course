@@ -1,0 +1,27 @@
+/*
+  matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) 6 حاجات
+  طريقة الحفظ --> scale, skew, skew, scale, translate, translate: X Y X Y X Y
+*/
+div {
+  margin: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255 0 0 / 39%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+div:hover {
+  transition: 0.5s;
+  transform: matrix(1.2, 0.2679, 0, 1.2, 20, 20);
+  /*tan of angle: tan(15degree)=0.2679 */
+  transform: translateX(20px) translateY(20px) scaleX(1.2) skewY(15deg)
+    skewX(0deg) scaleY(1.2);
+  /* matrixهاي تختلف عن اللي تحت ولذلك من الافضل استخدام ال */
+  transform: scaleX(1.2) skewY(15deg) skewX(0deg) scaleY(1.2) translateX(20px)
+    translateY(20px);
+}

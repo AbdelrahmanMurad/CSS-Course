@@ -1,0 +1,43 @@
+div {
+  /* Color Name */
+  background-color: red;
+  /* Red, Green, Blue, Alpha Channel */
+  background-color: rgba(13, 149, 222, 0.5);
+  /* Color Hex Code */
+  background-color: #ff0000;
+  background-image: url("../imgs/How-to-Learn-Programming.png");
+  background-repeat: no-repeat;
+  /* attachment مرفق-التعلق, ارتباط, حجز, ربط, رابط, مصادرة, تعليق, اداة ملحقة, مودة*/
+  /* fixed => scrollالصورة تتحرك على مستوى ال */
+  /* background-attachment: fixed; */
+  /* scroll => الصورة ما بتتحرك */
+  background-attachment: scroll;
+  background-position: left top;
+  /*  x  y
+    left top
+    left center
+    left bottom
+
+    right top
+    right center
+    right bottom
+
+    center top
+    center center
+    center bottom
+
+    ***** If you only specify one keyword, the other value will be "center"
+    https://www.w3schools.com/cssref/pr_background-position.asp
+    */
+
+  /* Default value. The background image is displayed in its original size */
+  background-size: auto;
+  /* background-size: cover; */
+  /* Resize the background image to cover the entire container,
+    even if it has to stretch the image or cut a little bit off one of the edges*/
+
+  /* background-size: contain; */
+  /*Resize the background image to make sure the image is fully visible */
+
+  /* https://www.w3schools.com/cssref/css3_pr_background-size.asp */
+}

@@ -1,0 +1,35 @@
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+div {
+  background-color: #eee;
+  padding: 10px;
+}
+
+/* .with-ser {
+  font-family: "Times New Roman", Times, serif;
+} */
+
+/* .san-ser {
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* .with-ser,
+.san-ser {
+  background-color: #eee;
+  padding: 10px;
+} */
+
+/*
+google fonts: 
+https://fonts.google.com/
+
+
+Best Fonts:
+https://www.w3schools.com/cssref/css_websafe_fonts.asp
+
+
+Mozilla Fonts: 
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts
+*/

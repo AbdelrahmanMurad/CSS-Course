@@ -1,0 +1,91 @@
+/*
+ - Grid is different than grid property.
+Grid
+? Parent
+- display: grid |or| inline-grid
+- grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat(), we can Mix]
+    - auto ياخذ مساحة على قدو "خجوول"
+    - fraction ياخذ المساحة الباقية بدون تفاهم "طماع"
+    - شو الافضل ؟؟
+        if you want layout سليم --> fraction
+- grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+----------------------------------------------
+Shorthand for [Row Gap] + [Column Gap]
+    - gap: [Row Gap] [Column Gap]
+----------------------------------------------  
+- justify-content افقي
+- align-content عمودي
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* reset for margin and padding */
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+.page {
+  height: 100vh;
+  /*
+  A height of 100vh corresponds to the maximum possible viewport height.
+  Since the initial viewport height is smaller, the body element with a min-height of 100vh initially exceeds the viewport height regardless of its content. 
+  مهما تكبر وتصغر بالعجلة،حيضل الاشي على قد المحتوى
+  */
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+    "logo logo nav nav nav nav nav nav nav nav"
+    "cont cont cont cont cont cont cont . side side"
+    "foot foot foot foot foot foot foot foot foot foot";
+  /* =============================================== */
+  /* height: 100vh;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+    "logo nav nav nav nav"
+    "cont cont cont . side"
+    "foot foot foot foot foot"; */
+}
+
+h2 {
+  grid-area: logo;
+  background-color: red;
+  /* color: white; */
+}
+
+nav {
+  grid-area: nav;
+  background-color: blue;
+  /* color: white; */
+}
+
+section {
+  grid-area: cont;
+  background-color: yellow;
+  /* color: white; */
+}
+
+aside {
+  grid-area: side;
+  background-color: green;
+  /* color: white; */
+}
+
+footer {
+  grid-area: foot;
+  background-color: black;
+  /* color: white; */
+}
